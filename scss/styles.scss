@@ -1,61 +1,223 @@
 * {
     box-sizing: border-box; 
 }
-header {
-    display: flex;
-    // justify-content: space-between; 
+body, html {
+    height: 100%;
+}
+body {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+header { 
     background-image: url("../img/rsz_unplashphoto-sandiego.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-   
-    height: 100vh;
+    background-position: center;
+    background-size: cover;
+     
+    height: 75%;
+    
 }
-.aside {
-    width: 10%;
-    border: 1px solid white;
-    background-color: white; 
-    opacity: 0.6;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 20px;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    // styles for the haburger transformation 
+    .ham-container {
+        display: inline-block;
+        .line1, .line2, .line3 {
+            width: 40px;
+            height: 4px;
+            background-color: black;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+        .transition-line1 {
+            transform: rotate(-45deg) translate(-7px, 6px); 
+          }
+          
+          .transition-line2 {
+             opacity: 0;
+          }
+          .transition-line3 {
+            transform: rotate(45deg) translate(-8px, -8px);
+          }
+    }
+
 }
 .nav-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
+    display: none;
+    width: 40%;
+    justify-content: space-between;
+       
    li {
     font-family: $font-stack;
        a {
            color: black;
            text-decoration: none;
-           font-size: 20px;
+           font-size: 16px;
            letter-spacing: 1px;
-           text-shadow: 1px 1px #57565691;    
+             
        }
    }
 }
 .intro {
     text-align: center;
     width: 90%;
-    margin: auto;
+    margin: 10% auto;
 }
 .intro-wrapper {
     font-family: $font-stack;
-    background-color: white; 
-    opacity: 0.6;
+    background-color: $color-bg-light; 
     width: 80%;
     margin: auto;
     border-radius: 10px;
     h1{
         color: $color-accent;
+        opacity: 0.8;
         font-size: 38px;
         margin: 0;  
         
     }
     p {
-        color: black8
+        color: black;
          
     }
     h3 {
         color: $color-accent;
         
+    }
+}
+// *********** Recent Works Section ***********
+.work {
+    width: 90%; 
+    margin: 0 auto;
+    text-align: center;  
+    height: auto; 
+    font-family: $font-stack;
+}
+.examples {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-wrap;
+    .example {
+        margin: 0 auto;
+    }
+}
+// ********** Experience section ***********
+
+.experience {
+ width: 95%;   
+ margin: 0 auto;
+ display: flex;
+ flex-flow: column;
+ justify-content: space-between;
+ font-family: $font-stack;
+  h4 { 
+    margin: 0;
+  }
+  .company {
+    margin: 0;
+    font-size: 14px;
+  }
+
+}
+.col {
+    background-color: $color-bg-accent-light;
+    padding: 10px;
+    color:black;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+ 
+}
+.skills {
+    text-align: center;
+}
+.skills-ul {
+    display: flex;
+    justify-content: space-between;
+}
+.heading {
+    opacity: 0.8;
+    color: $color-accent;
+    font-family: $font-stack;
+}
+// ******** About Section *********
+.about {
+    width: 90%;   
+    margin: 20px auto;
+    background-color: $color-bg-accent-light;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: $font-stack;
+}
+// ********** Contact Section *****
+.contact {
+    background-color: $color-bg-accent-light;
+    font-family: $font-stack;
+    margin-top: 60px;
+    padding: 20px;
+
+    p {
+        font-size: 14px;
+    }
+    .heading {
+        margin-top: 0;
+    }
+}
+.social-ul {
+    display: flex;
+    justify-content: center;
+    li {
+        width: 10%;   
+    }
+}
+.custom-icon {
+    width: 90%;
+}
+
+@media (min-width: 1040px) {
+    header {
+        height: 100%;
+    }
+    .nav-ul {
+        display: flex;
+    }
+    .nav {
+        .ham-container {
+            display: none;
+        }
+    }
+    .experience {
+        flex-flow: row;
+    }
+   .col {
+       margin: 20px 15px;
+   }
+   .about {
+       width: 93%;
+   }
+}
+@media (min-width: 768px) {
+    .custom-icon {
+        width: 50%;
+    }
+    .contact {
+        .contact-wrapper {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 16px;
+           
+        }
+
     }
 }
