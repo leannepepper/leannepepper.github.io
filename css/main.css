@@ -19,12 +19,9 @@ header {
   display: flex;
   justify-content: space-between;
   height: 100px;
-  margin: 0 20px;
-  padding-top: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: white; }
+  padding: 20px 20px 0px 20px;
+  margin: 0;
+  width: 100%; }
   .nav .ham-container {
     display: inline-block; }
     .nav .ham-container .line1, .nav .ham-container .line2, .nav .ham-container .line3 {
@@ -113,12 +110,36 @@ header {
 
 .skills-ul {
   display: flex;
-  justify-content: space-between; }
+  flex-flow: row wrap; }
+  .skills-ul li {
+    margin: 15px auto;
+    width: 50%; }
 
 .heading {
   opacity: 0.8;
   color: #193a44;
   font-family: "Nanum Gothic", sans-serif; }
+
+.html-badge {
+  fill: #e34f26; }
+
+.sass-badge {
+  fill: #cc6699; }
+
+.css-badge {
+  fill: #1572b6; }
+
+.git-badge {
+  fill: #f05032; }
+
+.js-badge {
+  fill: #f7df1e; }
+
+.bootstrap-badge {
+  fill: #563d7c; }
+
+.skills-icon {
+  width: 25%; }
 
 .about {
   width: 90%;
@@ -174,6 +195,13 @@ header {
     width: 90%;
     margin: 0 auto; }
   .contact p {
-    font-size: 16px; } }
+    font-size: 16px; }
+
+  .skills-ul li {
+    margin: 15px auto;
+    width: 30%; }
+
+  .skills-icon {
+    width: 40%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,7 +13,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-     
     height: 75%;
     
 }
@@ -21,12 +20,12 @@ header {
     display: flex;
     justify-content: space-between;
     height: 100px;
-    margin: 0 20px;
-    padding-top: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background-color: white;
+    padding: 20px 20px 0px 20px;
+    margin: 0;
+    width: 100%;
+    
+
+
     // styles for the haburger transformation 
     .ham-container {
         display: inline-block;
@@ -141,13 +140,40 @@ header {
 }
 .skills-ul {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    flex-flow: row wrap;
+    li {
+        margin: 15px auto;
+        width: 50%;
+    }
 }
 .heading {
     opacity: 0.8;
     color: $color-accent;
     font-family: $font-stack;
 }
+.html-badge {
+    fill: #e34f26;
+}
+.sass-badge {
+    fill: #cc6699;
+}
+.css-badge {
+    fill: #1572b6;
+}
+.git-badge {
+    fill: #f05032;
+}
+.js-badge {
+    fill: #f7df1e;
+}
+.bootstrap-badge {
+    fill: #563d7c;
+}
+.skills-icon {
+    width: 25%;
+}
+
 // ******** About Section *********
 .about {
     width: 90%;   
@@ -203,6 +229,7 @@ header {
    .about {
        width: 93%;
    }
+
 }
 @media (min-width: 768px) {
     .custom-icon {
@@ -219,5 +246,14 @@ header {
            
         }
 
+    }
+    .skills-ul {
+        li {
+            margin: 15px auto;
+            width: 30%;
+        }
+    }
+    .skills-icon {
+        width: 40%;
     }
 }
