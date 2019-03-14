@@ -59,7 +59,8 @@ header {
   background-color: rgba(255, 255, 255, 0.6);
   width: 80%;
   margin: auto;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding: 15px; }
   .intro-wrapper h1 {
     color: #193a44;
     opacity: 0.8;
@@ -74,15 +75,19 @@ header {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  height: auto;
   font-family: "Nanum Gothic", sans-serif; }
 
 .examples {
   display: flex;
-  justify-content: space-around;
-  flex-flow: row-wrap; }
+  justify-content: space-between;
+  flex-flow: wrap; }
   .examples .example {
-    margin: 0 auto; }
+    margin: 25px auto;
+    width: 75%; }
+    .examples .example img {
+      max-width: 100%;
+      min-height: 90%;
+      box-shadow: 5px 5px 30px lightgray; }
 
 .experience {
   width: 95%;
@@ -168,6 +173,26 @@ header {
 .custom-icon {
   width: 90%; }
 
+@media (min-width: 768px) {
+  .custom-icon {
+    width: 50%; }
+
+  .contact .contact-wrapper {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; }
+  .contact p {
+    font-size: 16px; }
+
+  .skills-ul li {
+    margin: 15px auto;
+    width: 30%; }
+
+  .skills-icon {
+    width: 40%; }
+
+  .examples .example {
+    width: 40%; } }
 @media (min-width: 1040px) {
   header {
     height: 100%; }
@@ -186,22 +211,5 @@ header {
 
   .about {
     width: 93%; } }
-@media (min-width: 768px) {
-  .custom-icon {
-    width: 50%; }
-
-  .contact .contact-wrapper {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto; }
-  .contact p {
-    font-size: 16px; }
-
-  .skills-ul li {
-    margin: 15px auto;
-    width: 30%; }
-
-  .skills-icon {
-    width: 40%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,8 +24,6 @@ header {
     margin: 0;
     width: 100%;
     
-
-
     // styles for the haburger transformation 
     .ham-container {
         display: inline-block;
@@ -76,6 +74,7 @@ header {
     width: 80%;
     margin: auto;
     border-radius: 10px;
+    padding: 15px;
     h1{
         color: $color-accent;
         opacity: 0.8;
@@ -97,17 +96,29 @@ header {
     width: 90%; 
     margin: 0 auto;
     text-align: center;  
-    height: auto; 
+    // height: auto; 
     font-family: $font-stack;
 }
 .examples {
     display: flex;
-    justify-content: space-around;
-    flex-flow: row-wrap;
+    justify-content: space-between;
+    flex-flow: wrap;
+    
     .example {
-        margin: 0 auto;
+        // display: flex;
+        margin: 25px auto;
+        
+        width: 75%; 
+        // background-repeat: no-repeat; 
+        // background-size: contain;
+        img {
+            max-width: 100%;
+            min-height: 90%;
+            box-shadow: 5px 5px 30px lightgray;
+        }
     }
 }
+
 // ********** Experience section ***********
 
 .experience {
@@ -208,29 +219,6 @@ header {
     width: 90%;
 }
 
-@media (min-width: 1040px) {
-    header {
-        height: 100%;
-    }
-    .nav-ul {
-        display: flex;
-    }
-    .nav {
-        .ham-container {
-            display: none;
-        }
-    }
-    .experience {
-        flex-flow: row;
-    }
-   .col {
-       margin: 20px 15px;
-   }
-   .about {
-       width: 93%;
-   }
-
-}
 @media (min-width: 768px) {
     .custom-icon {
         width: 50%;
@@ -256,4 +244,33 @@ header {
     .skills-icon {
         width: 40%;
     }
+    .examples {
+        .example {
+            width: 40%;   
+        }
+    }
+    
+}
+@media (min-width: 1040px) { 
+    header {
+        height: 100%;
+    }
+    .nav-ul {
+        display: flex;
+    }
+    .nav {
+        .ham-container {
+            display: none;
+        }
+    }
+    .experience {
+        flex-flow: row;
+    }
+   .col {
+       margin: 20px 15px;
+   }
+   .about {
+       width: 93%;
+   }
+  
 }
