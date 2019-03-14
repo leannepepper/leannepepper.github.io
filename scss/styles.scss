@@ -168,15 +168,12 @@ header {
         color: $color-accent;
     }
     button {
-        color: $color-accent;
-        background: transparent;
         padding: 0.5em;
         font-size: 0.7em;
         border-radius: 5px;
-        &:hover {
-            color: white; 
-            background-color: $color-accent;
-        }
+        color: white; 
+        background-color: $color-accent;
+        
     }
     p {
         font-size: 12px;

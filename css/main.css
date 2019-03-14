@@ -132,14 +132,11 @@ header {
     font-size: 14px;
     color: #193a44; }
   .items-overlay button {
-    color: #193a44;
-    background: transparent;
     padding: 0.5em;
     font-size: 0.7em;
-    border-radius: 5px; }
-    .items-overlay button:hover {
-      color: white;
-      background-color: #193a44; }
+    border-radius: 5px;
+    color: white;
+    background-color: #193a44; }
   .items-overlay p {
     font-size: 12px; }
 
