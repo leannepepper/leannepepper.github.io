@@ -205,7 +205,19 @@ header {
   background-color: rgba(33, 149, 161, 0.1);
   border-radius: 10px;
   padding: 10px;
-  font-family: "Nanum Gothic", sans-serif; }
+  font-family: "Nanum Gothic", sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.about-text {
+  max-width: 90%; }
+
+.wayne {
+  border-radius: 10%;
+  max-height: 90%;
+  max-width: 90%; }
 
 .contact {
   background-color: rgba(33, 149, 161, 0.1);
@@ -262,7 +274,13 @@ header {
     width: 40%; }
 
   .items-overlay h2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .about {
+    flex-flow: row;
+    align-items: flex-start; }
+    .about .about-text {
+      max-width: 60%; } }
 @media (min-width: 1040px) {
   header {
     height: 100%; }
