@@ -15,6 +15,12 @@ header {
   background-size: cover;
   height: 75%; }
 
+.width-add {
+  width: 150px !important; }
+
+.margin-add {
+  margin-top: 150px; }
+
 .nav {
   display: flex;
   height: 100px;
@@ -23,7 +29,8 @@ header {
   width: 100%; }
   .nav .ham-container {
     display: inline-block;
-    position: relative; }
+    position: sticky;
+    z-index: 3; }
     .nav .ham-container .line1, .nav .ham-container .line2, .nav .ham-container .line3 {
       width: 40px;
       height: 4px;
@@ -37,6 +44,8 @@ header {
       opacity: 0; }
     .nav .ham-container .transition-line3 {
       transform: rotate(45deg) translate(-8px, -8px); }
+  .nav .ham-up {
+    margin-top: -155px; }
 
 .nav-ul {
   display: none;
@@ -53,16 +62,18 @@ header {
         border-bottom: 2px solid #e9a425; }
 
 .menu-ul {
-  position: absolute;
-  top: 60px;
-  left: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   z-index: 2;
-  padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin-left: 100px;
+  width: 0; }
   .menu-ul li {
     font-family: "Nanum Gothic", sans-serif;
-    margin-top: 10px; }
+    margin-top: 8px; }
     .menu-ul li a {
       color: black;
       text-decoration: none;
@@ -201,7 +212,7 @@ header {
   width: 25%; }
 
 .about {
-  width: 90%;
+  width: 95%;
   margin: 20px auto;
   background-color: rgba(33, 149, 161, 0.1);
   border-radius: 10px;
@@ -213,11 +224,11 @@ header {
   justify-content: space-between; }
 
 .about-text {
-  max-width: 90%; }
+  max-width: 95%; }
 
 .wayne {
   border-radius: 10%;
-  max-height: 90%;
+  max-height: 95%;
   max-width: 300px; }
 
 .contact {
