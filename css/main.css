@@ -146,7 +146,7 @@ header {
     padding: 0.5em;
     border-radius: 5px;
     background-color: #193a44;
-    font-size: 1em;
+    font-size: 0.7em;
     color: white;
     text-decoration: none; }
   .items-overlay p {
@@ -287,6 +287,8 @@ header {
 
   .items-overlay h2 {
     font-size: 18px; }
+  .items-overlay a {
+    font-size: 0.9em; }
 
   .about {
     flex-flow: row;

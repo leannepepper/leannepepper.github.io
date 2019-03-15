@@ -5,14 +5,7 @@ const hamContainer = document.querySelector('.ham-container');
 const nav = document.querySelector('.nav');
 const menuUl = document.querySelector(".menu-ul"); 
 const main = document.querySelector(".all-content");
-// const html = ` 
-// <ul class="menu-ul">
-//   <li><a href="#work">Recent Work</a></li> 
-//   <li><a href="#experience">Experience</a></li> 
-//   <li><a href="#about">About</a></li> 
-//   <li><a href="#contact">Contact</a></li>
-// </ul>
-// `; 
+
 
 function openMenu() {
   menuUl.style.width = "150px";
@@ -31,13 +24,5 @@ hamContainer.addEventListener('click', function(){
   menuUl.classList.toggle("width-add"); 
   main.classList.toggle("margin-add");
 
-  // openMenu();
-  // if(main.style.marginTop === "0"){
-  //   console.log("hello");
-  //  openMenu();
-  // }
-  // else {
-  //   closeMenu();
-  // }
 
 });

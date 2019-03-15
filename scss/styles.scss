@@ -186,7 +186,7 @@ header {
         padding: 0.5em;
         border-radius: 5px;
         background-color: $color-accent;
-        font-size: 1em; 
+        font-size: 0.7em; 
         color: white; 
         text-decoration: none;
     } 
@@ -360,6 +360,10 @@ header {
         h2 {
             font-size: 18px;
         }
+        a{
+            font-size: 0.9em; 
+        }
+        
     }
     .about {
         flex-flow: row;
