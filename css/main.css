@@ -131,12 +131,13 @@ header {
   .items-overlay h2 {
     font-size: 14px;
     color: #193a44; }
-  .items-overlay button {
+  .items-overlay a {
     padding: 0.5em;
-    font-size: 0.7em;
     border-radius: 5px;
+    background-color: #193a44;
+    font-size: 1em;
     color: white;
-    background-color: #193a44; }
+    text-decoration: none; }
   .items-overlay p {
     font-size: 12px; }
 
@@ -217,7 +218,7 @@ header {
 .wayne {
   border-radius: 10%;
   max-height: 90%;
-  max-width: 90%; }
+  max-width: 300px; }
 
 .contact {
   background-color: rgba(33, 149, 161, 0.1);

@@ -162,19 +162,18 @@ header {
     left: 0; 
     right: 0;
     
-
     h2 {
         font-size: 14px;
         color: $color-accent;
     }
-    button {
+    a { 
         padding: 0.5em;
-        font-size: 0.7em;
         border-radius: 5px;
-        color: white; 
         background-color: $color-accent;
-        
-    }
+        font-size: 1em; 
+        color: white; 
+        text-decoration: none;
+    } 
     p {
         font-size: 12px;
     }
@@ -267,7 +266,7 @@ header {
 .wayne {
     border-radius: 10%;
     max-height: 90%;
-    max-width: 90%;
+    max-width: 300px;
  
 }
 // ********** Contact Section *****

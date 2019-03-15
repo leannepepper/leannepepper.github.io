@@ -31,4 +31,4 @@ hamContainer.addEventListener('click', function(){
     menu.innerHTML = "";
   }
 
-})
+});
