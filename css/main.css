@@ -157,7 +157,7 @@ header {
 
 .col {
   background-color: rgba(33, 149, 161, 0.1);
-  padding: 10px;
+  padding: 15px;
   color: black;
   width: 95%;
   margin: 20px auto;
@@ -204,7 +204,7 @@ header {
   margin: 20px auto;
   background-color: rgba(33, 149, 161, 0.1);
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   font-family: "Nanum Gothic", sans-serif;
   display: flex;
   flex-flow: column;
@@ -223,7 +223,7 @@ header {
   background-color: rgba(33, 149, 161, 0.1);
   font-family: "Nanum Gothic", sans-serif;
   margin-top: 60px;
-  padding: 20px; }
+  padding: 15px; }
   .contact p {
     font-size: 14px; }
   .contact .heading {
