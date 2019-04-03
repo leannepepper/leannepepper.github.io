@@ -9,7 +9,7 @@ body {
     margin: 0 auto;
 }
 header { 
-    // background-color: #516353;
+    // background-color: $color-bg-accent-light;
     height: 75%;
     
 }
@@ -138,16 +138,14 @@ header {
 }
 .examples {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: wrap;
     
     .example {
-        margin: 25px auto;
+        margin: 25px;
         position: relative;
-        width: 75%; 
-        img {
-            max-width: 100%;
-            min-height: 90%;
+
+        .project-svg {
             box-shadow: 5px 5px 30px lightgray;
         }
         &:hover .items-overlay {
@@ -160,30 +158,27 @@ header {
 .items-overlay {
     opacity: 0;
     background:rgba(255, 255, 255, 0.9);
-    border: 2px solid $color-accent-com;
+    border: 4px solid $color-accent-com;
     position: absolute;
     padding: 0.6em;
     overflow: hidden;
-    height: 90%;
-    top: 0; 
-    bottom: 0; 
-    left: 0; 
-    right: 0;
-    
+    height: 300px;
+    width: 300px;
+    top: 0;   
     h2 {
-        font-size: 14px;
+        font-size: 22px;
         color: $color-accent;
     }
     a { 
         padding: 0.5em;
         border-radius: 5px;
         background-color: $color-accent;
-        font-size: 0.7em; 
+        font-size: 0.9em; 
         color: white; 
         text-decoration: none;
     } 
     p {
-        font-size: 12px;
+        font-size: 18px;  
     }
 }
 // ********** Experience section ***********
@@ -269,8 +264,7 @@ header {
     max-width: 95%;
 }
 .wayne {
-   
-    max-height: 95%;
+    max-height: 80%;
     width: 300px;
  
 }
@@ -339,14 +333,10 @@ header {
     .skills-icon {
         width: 40%;
     }
-    .examples {
-        .example {
-            width: 40%;   
-        }
-    }
+  
     .items-overlay {
         h2 {
-            font-size: 18px;
+            font-size: 22px;
         }
         a{
             font-size: 0.9em; 
@@ -377,12 +367,6 @@ header {
        width: 93%;
    }
    .items-overlay {
-    h2 {
-        font-size: 22px;
-    }
-    p {
-        font-size: 18px;
-    }
     button {
         font-size: 16px;
     }
