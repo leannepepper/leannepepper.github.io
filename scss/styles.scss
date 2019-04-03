@@ -9,10 +9,7 @@ body {
     margin: 0 auto;
 }
 header { 
-    background-image: url("../img/rsz_unplashphoto-sandiego.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background-color: #516353;
     height: 75%;
     
 }
@@ -67,7 +64,7 @@ header {
     justify-content: space-between;
        
    li {
-    font-family: $font-stack;
+    font-family: $font-stack-secondary;
       
        a {
            color: black;
@@ -82,7 +79,7 @@ header {
    }
 }
 .menu-ul {
-    background-color: $color-bg-light;
+    // background-color: $color-bg-light;
     z-index: 2;
     // padding: 10px;
     border-radius: 5px;
@@ -93,7 +90,7 @@ header {
     margin-left: 100px;
     width: 0;
     li {
-        font-family: $font-stack;
+        font-family: $font-stack-secondary;
         margin-top: 8px; 
            a {
                color: black;
@@ -114,22 +111,17 @@ header {
     margin: 10% auto;
 }
 .intro-wrapper {
-    font-family: $font-stack;
-    background-color: $color-bg-light; 
+    font-family:$font-stack-primary;
     width: 80%;
     margin: auto;
     border-radius: 10px;
     padding: 15px;
     h1{
-        color: $color-accent;
+        color: $color-accent-com;
         opacity: 0.8;
-        font-size: 38px;
+        font-size: 72px;
         margin: 0;  
         
-    }
-    p {
-        color: black;
-         
     }
     h4 {
         color: $color-accent-com;
@@ -142,7 +134,7 @@ header {
     margin: 0 auto;
     text-align: center;  
     // height: auto; 
-    font-family: $font-stack;
+    font-family: $font-stack-primary;
 }
 .examples {
     display: flex;
@@ -202,7 +194,7 @@ header {
  display: flex;
  flex-flow: column;
  justify-content: space-between;
- font-family: $font-stack;
+ font-family: $font-stack-primary;
   h4 { 
     margin: 0;
   }
@@ -216,7 +208,6 @@ header {
 
 }
 .col {
-    background-color: $color-bg-accent-light;
     padding: 15px;
     color:black;
     width: 95%;
@@ -237,9 +228,8 @@ header {
     }
 }
 .heading {
-    opacity: 0.8;
     color: $color-accent;
-    font-family: $font-stack;
+    font-family: $font-stack-secondary;
 }
 .html-badge {
     fill: #e34f26;
@@ -267,10 +257,9 @@ header {
 .about {
     width: 95%;   
     margin: 20px auto;
-    background-color: $color-bg-accent-light;
     border-radius: 10px;
     padding: 15px;
-    font-family: $font-stack;
+    font-family: $font-stack-primary;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -280,15 +269,14 @@ header {
     max-width: 95%;
 }
 .wayne {
-    border-radius: 10%;
+   
     max-height: 95%;
-    max-width: 300px;
+    width: 300px;
  
 }
 // ********** Contact Section *****
 .contact {
-    background-color: $color-bg-accent-light;
-    font-family: $font-stack;
+    font-family: $font-stack-primary;
     margin-top: 60px;
     padding: 15px;
 
