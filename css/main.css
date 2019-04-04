@@ -52,7 +52,7 @@ header {
     .nav-ul li a {
       color: black;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 22px;
       letter-spacing: 1px; }
       .nav-ul li a:hover {
         border-bottom: 2px solid #ca2a2a; }
@@ -72,7 +72,7 @@ header {
     .menu-ul li a {
       color: black;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 22px;
       letter-spacing: 1px; }
       .menu-ul li a:hover {
         border-bottom: 2px solid #ca2a2a; }
@@ -139,28 +139,6 @@ header {
   .items-overlay p {
     font-size: 18px; }
 
-.experience {
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  font-family: "PT Sans", sans-serif; }
-  .experience h4 {
-    margin: 0; }
-  .experience .company {
-    margin: 0;
-    font-size: 14px; }
-  .experience p {
-    font-size: 14px; }
-
-.col {
-  padding: 15px;
-  color: black;
-  width: 95%;
-  margin: 20px auto;
-  border-radius: 10px; }
-
 .skills {
   text-align: center; }
 
@@ -173,7 +151,8 @@ header {
 
 .heading {
   color: black;
-  font-family: "PT Sans Narrow", sans-serif; }
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 28px; }
 
 .html-badge {
   fill: #e34f26; }
@@ -196,42 +175,48 @@ header {
 .skills-icon {
   width: 25%; }
 
-.about {
+.experience {
+  display: flex;
+  flex-direction: column; }
+
+.col {
+  padding: 15px;
+  color: black;
   width: 95%;
   margin: 20px auto;
-  border-radius: 10px;
-  padding: 15px;
-  font-family: "PT Sans", sans-serif;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-between; }
+  border-radius: 10px; }
 
-.about-text {
-  max-width: 95%; }
-
-.wayne {
-  max-height: 80%;
-  width: 300px; }
+.about p {
+  font-size: 20px;
+  line-height: 1.5; }
+.about a {
+  text-decoration: none;
+  color: black; }
+  .about a:hover {
+    color: #ca2a2a; }
 
 .contact {
   font-family: "PT Sans", sans-serif;
   margin-top: 60px;
   padding: 15px; }
   .contact p {
-    font-size: 14px; }
-  .contact .heading {
-    margin-top: 0; }
+    font-size: 18px; }
 
 .social-ul {
   display: flex;
   justify-content: center; }
   .social-ul li {
-    width: 10%; }
+    width: 10%;
+    margin: 15px; }
 
 .custom-icon {
   width: 90%;
   fill: #ca2a2a; }
+
+.dog-svg {
+  float: right;
+  width: 100%;
+  height: 56%; }
 
 @media (min-width: 768px) {
   .menu-ul {
@@ -250,12 +235,25 @@ header {
   .custom-icon {
     width: 50%; }
 
-  .contact .contact-wrapper {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto; }
-  .contact p {
-    font-size: 16px; }
+  .contact {
+    position: relative; }
+    .contact .contact-wrapper {
+      text-align: center;
+      width: 38%;
+      margin: 0 auto;
+      z-index: 5;
+      padding: 42px;
+      position: absolute;
+      top: 115px; }
+
+  .dog-svg {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: auto; }
+
+  .social-ul li {
+    width: 35%; }
 
   .skills-ul li {
     margin: 15px auto;
@@ -273,7 +271,10 @@ header {
     flex-flow: row;
     align-items: flex-start; }
     .about .about-text {
-      max-width: 60%; } }
+      max-width: 60%; }
+
+  .experience {
+    flex-direction: row; } }
 @media (min-width: 1040px) {
   header {
     height: 100%; }
