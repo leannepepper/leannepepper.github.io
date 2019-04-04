@@ -132,10 +132,14 @@ header {
   .items-overlay a {
     padding: 0.5em;
     border-radius: 5px;
-    background-color: black;
+    background-color: white;
     font-size: 0.9em;
-    color: white;
+    border: 1px solid #ca2a2a;
+    color: #ca2a2a;
     text-decoration: none; }
+    .items-overlay a:hover {
+      color: white;
+      background-color: #ca2a2a; }
   .items-overlay p {
     font-size: 18px; }
 
@@ -177,7 +181,9 @@ header {
 
 .experience {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 144px;
+  background: linear-gradient(152deg, #fff, #8b53410a) no-repeat; }
 
 .col {
   padding: 15px;
@@ -191,11 +197,12 @@ header {
   line-height: 1.5; }
 .about a {
   text-decoration: none;
-  color: black; }
-  .about a:hover {
-    color: #ca2a2a; }
+  color: #ca2a2a; }
+.about h2 {
+  text-align: center; }
 
 .contact {
+  text-align: center;
   font-family: "PT Sans", sans-serif;
   margin-top: 60px;
   padding: 15px; }
@@ -238,7 +245,6 @@ header {
   .contact {
     position: relative; }
     .contact .contact-wrapper {
-      text-align: center;
       width: 38%;
       margin: 0 auto;
       z-index: 5;
