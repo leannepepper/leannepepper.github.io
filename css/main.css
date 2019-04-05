@@ -30,7 +30,7 @@ header {
     .nav .ham-container .line1, .nav .ham-container .line2, .nav .ham-container .line3 {
       width: 40px;
       height: 4px;
-      background-color: black;
+      background-color: #333;
       margin: 6px 0;
       transition: 0.3s;
       border-radius: 4px; }
@@ -50,7 +50,7 @@ header {
   .nav-ul li {
     font-family: "PT Sans Narrow", sans-serif; }
     .nav-ul li a {
-      color: black;
+      color: #333;
       text-decoration: none;
       font-size: 22px;
       letter-spacing: 1px; }
@@ -70,7 +70,7 @@ header {
     font-family: "PT Sans Narrow", sans-serif;
     margin-top: 8px; }
     .menu-ul li a {
-      color: black;
+      color: #333;
       text-decoration: none;
       font-size: 22px;
       letter-spacing: 1px; }
@@ -128,7 +128,7 @@ header {
   top: 0; }
   .items-overlay h2 {
     font-size: 22px;
-    color: black; }
+    color: #333; }
   .items-overlay a {
     padding: 0.5em;
     border-radius: 5px;
@@ -154,7 +154,7 @@ header {
     width: 50%; }
 
 .heading {
-  color: black;
+  color: #333;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 28px; }
 
@@ -183,11 +183,11 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 144px;
-  background: linear-gradient(152deg, #fff, #8b53410a) no-repeat; }
+  background: linear-gradient(100deg, #fff, #8b54411c) no-repeat; }
 
 .col {
   padding: 15px;
-  color: black;
+  color: #333;
   width: 95%;
   margin: 20px auto;
   border-radius: 10px; }

@@ -1,5 +1,5 @@
 /*
-Error: Undefined variable: "$color-accent".
+Error: Undefined variable: "$color-text".
         on line 36 of scss/styles.scss
 
 31:         z-index: 3;
@@ -7,7 +7,7 @@ Error: Undefined variable: "$color-accent".
 33:         .line1, .line2, .line3 {
 34:             width: 40px;
 35:             height: 4px;
-36:             background-color:$color-accent;
+36:             background-color:$color-text;
 37:             margin: 6px 0;
 38:             transition: 0.3s;
 39:             border-radius: 4px;
@@ -91,4 +91,4 @@ scss/styles.scss:36
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-accent\".\A         on line 36 of scss/styles.scss\A \A 31:         z-index: 3;\A 32:        \A 33:         .line1, .line2, .line3 {\A 34:             width: 40px;\A 35:             height: 4px;\A 36:             background-color:$color-accent;\A 37:             margin: 6px 0;\A 38:             transition: 0.3s;\A 39:             border-radius: 4px;\A 40:         }\A 41:         .transition-line1 {"; }
+  content: "Error: Undefined variable: \"$color-text\".\A         on line 36 of scss/styles.scss\A \A 31:         z-index: 3;\A 32:        \A 33:         .line1, .line2, .line3 {\A 34:             width: 40px;\A 35:             height: 4px;\A 36:             background-color:$color-text;\A 37:             margin: 6px 0;\A 38:             transition: 0.3s;\A 39:             border-radius: 4px;\A 40:         }\A 41:         .transition-line1 {"; }

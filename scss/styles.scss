@@ -33,7 +33,7 @@ header {
         .line1, .line2, .line3 {
             width: 40px;
             height: 4px;
-            background-color:$color-accent;
+            background-color:$color-text;
             margin: 6px 0;
             transition: 0.3s;
             border-radius: 4px;
@@ -65,7 +65,7 @@ header {
     font-family: $font-stack-secondary;
       
        a {
-           color: black;
+           color: $color-text;
            text-decoration: none;
            font-size: 22px;
            letter-spacing: 1px;
@@ -89,7 +89,7 @@ header {
         font-family: $font-stack-secondary;
         margin-top: 8px; 
            a {
-               color: black;
+               color: $color-text;
                text-decoration: none;
                font-size: 22px;
                letter-spacing: 1px;
@@ -163,7 +163,7 @@ header {
     top: 0;   
     h2 {
         font-size: 22px;
-        color: $color-accent;
+        color: $color-text;
     }
     a { 
         padding: 0.5em;
@@ -198,7 +198,7 @@ header {
     }
 }
 .heading {
-    color: $color-accent;
+    color: $color-text;
     font-family: $font-stack-secondary;
     font-size: 28px;
 }
@@ -227,12 +227,12 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 144px;
-    background: linear-gradient(152deg,#fff, $color-bg-accent-light) no-repeat;
+    background: linear-gradient(100deg,#fff, $color-bg-accent-light) no-repeat;
 }
 
 .col {
     padding: 15px;
-    color:black;
+    color:$color-text;
     width: 95%;
     margin: 20px auto;
     border-radius: 10px;
